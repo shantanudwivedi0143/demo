@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+.custom-cursor {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.rotating-text-circle {
+  animation: rotateCursor 6s linear infinite;
+}
+
+@keyframes rotateCursor {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes rotateBG {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
